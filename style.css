@@ -322,7 +322,7 @@ img {
 
 .activity-card article {
   height: 15rem;
-  width: 20rem;
+  width: 21rem;
   border-radius: 10px;
   background-color: #fff;
   margin: 1rem;
@@ -336,7 +336,7 @@ img {
 
 .activity-card img {
   height: 12rem;
-  width: 20rem;
+  width: 21rem;
   border-radius: 10px 10px 0 0;
 }
 
@@ -632,7 +632,6 @@ footer a {
   /* Accomodation */
   .accomodation-main {
     flex-direction: column-reverse;
-    border: 6px solid green;
   }
 
   .accomodation-container {
@@ -762,7 +761,6 @@ footer a {
   /* Accomodation */
   .accomodation-main {
     flex-direction: column-reverse;
-    border: 6px solid green;
   }
 
   .accomodation-container {
