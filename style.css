@@ -1,5 +1,6 @@
 /* GLOBAL RULES */
 body {
+  margin: 0 auto;
   font-family: "Raleway";
 }
 
@@ -48,9 +49,9 @@ img {
 
 .accomodation-button:hover,
 .activity-button:hover {
-  border-top: #0065fc 2px solid;
+  border-top: #0065fc 3px solid;
   color: #0065fc;
-  padding-top: 1rem;
+  padding-top: 1.7rem;
 }
 
 .subscribe-button {
@@ -421,8 +422,6 @@ footer a {
 @media screen and (min-width: 2560px) {
   body,
   ::placeholder {
-    width: 1640px;
-    margin: 0 auto;
     font-size: 1.3em;
   }
 
@@ -430,7 +429,7 @@ footer a {
   main,
   footer section {
     width: 1640px;
-    margin: auto;
+    margin: 0 auto;
   }
 
   .header-container img {
@@ -464,11 +463,11 @@ footer a {
 
   .activity-card article {
     height: 15.5rem;
-    width: 23rem;
+    width: 24rem;
   }
 
   .activity-card article img {
-    width: 23rem;
+    width: 24rem;
   }
 
   .vieux-port article,
@@ -661,7 +660,6 @@ footer a {
 
   /* Acitivity */
   .activity-container {
-    /* flex-direction: column; */
     flex-wrap: wrap;
     align-items: center;
   }
@@ -720,12 +718,17 @@ footer a {
   }
 
   .header-navigation ul {
-    margin-left: 0;
+    margin-left: 0.5rem;
     padding: 0;
   }
 
   .header-container nav {
     order: 3;
+  }
+
+  .accomodation-button,
+  .activity-button {
+    margin-left: 0.8rem;
   }
 
   .accomodation-button:hover,
