@@ -29,21 +29,25 @@
   <body>
     <!-- HEADER -->
     <header class="header-section">
-      <img src="/images/logo/reservia_logo.png" alt="Logo du site" />
-      <nav class="header-navigation">
-        <ul>
-          <li>
-            <a href="#accomodation" class="accomodation-button">Hébergement</a>
-          </li>
-          <li><a href="#activity" class="activity-button">Activité</a></li>
-          <li><a href="#" class="subscribe-button">S'inscrire</a></li>
-        </ul>
-      </nav>
+      <section class="header-container">
+        <img src="/images/logo/reservia_logo.png" alt="Logo du site" />
+        <nav class="header-navigation">
+          <ul>
+            <li>
+              <a href="#accomodation" class="accomodation-button"
+                >Hébergement</a
+              >
+            </li>
+            <li><a href="#activity" class="activity-button">Activité</a></li>
+          </ul>
+        </nav>
+        <p><a href="#" class="subscribe-button">S'inscrire</a></p>
+      </section>
     </header>
 
     <!-- MAIN -->
     <main class="global-section">
-      <!-- Main section -->
+      <!-- Filter section -->
       <section class="filters-section">
         <div class="filters-description">
           <h1>Trouver votre hébergement pour des vacances de rêve</h1>
@@ -64,7 +68,7 @@
 
         <!-- Filters -->
         <section class="filters">
-          <h3>Filtres</h3>
+          <h2>Filtres</h2>
           <a href="#" class="filter">
             <div class="icon-filter">
               <i class="fa fa-money-bill-wave"></i>
@@ -102,7 +106,7 @@
           <section class="accomodation-container">
             <h2>Hébergements à Marseille</h2>
             <section class="accomodations">
-              <a href="#" class="accomodation">
+              <a href="#" class="accomodation-card">
                 <article>
                   <img
                     src="./images/hebergements/auberge-cannebiere.jpg"
@@ -121,7 +125,7 @@
                   </div>
                 </article>
               </a>
-              <a href="#" class="accomodation">
+              <a href="#" class="accomodation-card">
                 <article>
                   <img
                     src="./images/hebergements/hotel-port.jpg"
@@ -140,7 +144,7 @@
                   </div>
                 </article>
               </a>
-              <a href="#" class="accomodation">
+              <a href="#" class="accomodation-card">
                 <article>
                   <img
                     src="./images/hebergements/hotel-mouette.jpg"
@@ -159,7 +163,7 @@
                   </div>
                 </article>
               </a>
-              <a href="#" class="accomodation">
+              <a href="#" class="accomodation-card">
                 <article>
                   <img
                     src="./images/hebergements/hotel-mer.jpg"
@@ -178,7 +182,7 @@
                   </div>
                 </article>
               </a>
-              <a href="#" class="accomodation">
+              <a href="#" class="accomodation-card">
                 <article>
                   <img
                     src="./images/hebergements/auberge-panier.jpg"
@@ -197,7 +201,7 @@
                   </div>
                 </article>
               </a>
-              <a href="#" class="accomodation">
+              <a href="#" class="accomodation-card">
                 <article>
                   <img
                     src="./images/hebergements/hotel-amina.jpg"
@@ -226,63 +230,65 @@
               <span><i class="fas fa-chart-line fa-lg"></i></span>
             </div>
             <!-- Most popular cards -->
-            <a href="#" class="mostpopular">
-              <article>
-                <img
-                  src="./images/hebergements/hotel-soleil.jpg"
-                  alt="logements proposés"
-                />
-                <div>
-                  <h3>Hôtel Le soleil du matin</h3>
-                  <p>Nuit à partir de <span>128€</span></p>
+            <section class="mostpopular-container">
+              <a href="#" class="mostpopular-card">
+                <article>
+                  <img
+                    src="./images/hebergements/hotel-soleil.jpg"
+                    alt="logements proposés"
+                  />
                   <div>
-                    <i class="fa fa-star blue"></i>
-                    <i class="fa fa-star blue"></i>
-                    <i class="fa fa-star blue"></i>
-                    <i class="fa fa-star blue"></i>
-                    <i class="fa fa-star blue"></i>
+                    <h3>Hôtel Le soleil du matin</h3>
+                    <p>Nuit à partir de <span>128€</span></p>
+                    <div>
+                      <i class="fa fa-star blue"></i>
+                      <i class="fa fa-star blue"></i>
+                      <i class="fa fa-star blue"></i>
+                      <i class="fa fa-star blue"></i>
+                      <i class="fa fa-star blue"></i>
+                    </div>
                   </div>
-                </div>
-              </article>
-            </a>
-            <a href="#" class="mostpopular">
-              <article>
-                <img
-                  src="./images/hebergements/hote-coeur-eau.jpg"
-                  alt="logements proposés"
-                />
-                <div>
-                  <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                  <p>Nuit à partir de <span>71€</span></p>
+                </article>
+              </a>
+              <a href="#" class="mostpopular-card">
+                <article>
+                  <img
+                    src="./images/hebergements/hote-coeur-eau.jpg"
+                    alt="logements proposés"
+                  />
                   <div>
-                    <i class="fa fa-star blue"></i>
-                    <i class="fa fa-star blue"></i>
-                    <i class="fa fa-star blue"></i>
-                    <i class="fa fa-star blue"></i>
-                    <i class="fa fa-star grey"></i>
+                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                    <p>Nuit à partir de <span>71€</span></p>
+                    <div>
+                      <i class="fa fa-star blue"></i>
+                      <i class="fa fa-star blue"></i>
+                      <i class="fa fa-star blue"></i>
+                      <i class="fa fa-star blue"></i>
+                      <i class="fa fa-star grey"></i>
+                    </div>
                   </div>
-                </div>
-              </article>
-            </a>
-            <a href="#" class="mostpopular">
-              <article>
-                <img
-                  src="./images/hebergements/hotel-bleu-blanc.jpg"
-                  alt="logements proposés"
-                />
-                <div>
-                  <h3>Auberge de la Cannebière</h3>
-                  <p>Nuit à partir de <span>25€</span></p>
+                </article>
+              </a>
+              <a href="#" class="mostpopular-card">
+                <article>
+                  <img
+                    src="./images/hebergements/hotel-bleu-blanc.jpg"
+                    alt="logements proposés"
+                  />
                   <div>
-                    <i class="fa fa-star blue"></i>
-                    <i class="fa fa-star blue"></i>
-                    <i class="fa fa-star blue"></i>
-                    <i class="fa fa-star blue"></i>
-                    <i class="fa fa-star blue"></i>
+                    <h3>Auberge de la Cannebière</h3>
+                    <p>Nuit à partir de <span>25€</span></p>
+                    <div>
+                      <i class="fa fa-star blue"></i>
+                      <i class="fa fa-star blue"></i>
+                      <i class="fa fa-star blue"></i>
+                      <i class="fa fa-star blue"></i>
+                      <i class="fa fa-star blue"></i>
+                    </div>
                   </div>
-                </div>
-              </article>
-            </a>
+                </article>
+              </a>
+            </section>
           </section>
         </section>
       </section>
@@ -302,8 +308,7 @@
               </div>
             </article>
           </a>
-
-          <div>
+          <div class="card-group">
             <a href="#" class="activity-card pomegues">
               <article>
                 <img
@@ -338,8 +343,7 @@
               </div>
             </article>
           </a>
-
-          <div>
+          <div class="card-group">
             <a href="#" class="activity-card">
               <article>
                 <img
@@ -363,9 +367,34 @@
               </article>
             </a>
           </div>
+          <div class="card-group responsive-group">
+            <a href="#" class="activity-card">
+              <article>
+                <img
+                  src="./images/activites/vieux-port.jpg"
+                  alt="logements proposés"
+                />
+                <div>
+                  <h3>Vieux Port</h3>
+                </div>
+              </article>
+            </a>
+            <a href="#" class="activity-card">
+              <article>
+                <img
+                  src="./images/activites/calanques.jpg"
+                  alt="logements proposés"
+                />
+                <div>
+                  <h3>Parc National des calanques</h3>
+                </div>
+              </article>
+            </a>
+          </div>
         </section>
       </section>
     </main>
+
     <!-- FOOTER -->
     <footer>
       <section>
